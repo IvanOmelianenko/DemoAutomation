@@ -46,3 +46,6 @@ public class Main {
     }
 
 }
+
+
+// Question: Why press enter doesn't work only via debug mode?
