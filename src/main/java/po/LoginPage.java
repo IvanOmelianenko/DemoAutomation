@@ -12,6 +12,8 @@ public class LoginPage extends BaseMethod {
 
     private final By nickName = By.xpath("//a[span='DemoJavaTest']");
 
+    private final By invalidData = By.xpath("//div[@class='cdx-message__content']");
+
     public void clickOnLogin() {
         click(login);
     }
@@ -28,6 +30,10 @@ public class LoginPage extends BaseMethod {
 
     public String getLogin() {
         return getTextFromElement(nickName);
+    }
+
+    public String getErrorMessage() {
+        return getTextFromElement(invalidData);
     }
 
 }
