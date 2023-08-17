@@ -1,4 +1,4 @@
-import org.assertj.core.api.SoftAssertionError;
+
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
