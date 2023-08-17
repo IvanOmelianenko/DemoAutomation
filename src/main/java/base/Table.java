@@ -34,7 +34,7 @@ public class Table extends BaseMethod {
     }
     public String getValue(int row, int column) {
         List<List<WebElement>> rowsAndColumn = getRowsAndColumns();
-        WebElement cell = rowsAndColumn.get(row - 1).get(column - 1);
+        WebElement cell = rowsAndColumn.get(row).get(column - 1);
         return cell.getText();
     }
 
