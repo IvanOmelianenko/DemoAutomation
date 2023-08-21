@@ -1,9 +1,10 @@
+package selenium.listeners;
 
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import po.LoginPage;
+import selenium.po.LoginPage;
 
 
 public class LoginTest extends BaseTest {

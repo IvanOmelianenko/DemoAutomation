@@ -1,12 +1,11 @@
-package base;
+package selenium.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 
 public class Table extends BaseMethod {
@@ -34,7 +33,7 @@ public class Table extends BaseMethod {
     }
     public String getValue(int row, int column) {
         List<List<WebElement>> rowsAndColumn = getRowsAndColumns();
-        WebElement cell = rowsAndColumn.get(row).get(column - 1);
+        WebElement cell = rowsAndColumn.get(row - 1).get(column - 1);
         return cell.getText();
     }
 

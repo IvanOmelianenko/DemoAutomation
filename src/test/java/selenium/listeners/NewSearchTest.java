@@ -1,8 +1,10 @@
-import builder.SearchPageBuilder;
+package selenium.listeners;
+
+import selenium.builder.SearchPageBuilder;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import po.NewSearchPage;
+import selenium.po.NewSearchPage;
 
 
 public class NewSearchTest extends BaseTest {

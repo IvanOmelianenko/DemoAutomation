@@ -1,8 +1,10 @@
+package selenium.listeners;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import static config.WebDriverInit.closedDriver;
-import static config.WebDriverInit.getDriver;
+import static selenium.config.WebDriverInit.closedDriver;
+import static selenium.config.WebDriverInit.getDriver;
 
 public class BaseTest {
     WebDriver driver = null;

@@ -1,7 +1,7 @@
-package builder;
+package selenium.builder;
 
-import base.BaseMethod;
-import po.NewSearchPage;
+import selenium.base.BaseMethod;
+import selenium.po.NewSearchPage;
 
 public class SearchPageBuilder extends BaseMethod {
 

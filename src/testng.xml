@@ -15,8 +15,8 @@
 
     <test name="Search/Login">
         <classes>
-            <class name="SearchTest"/>
-            <class name="LoginTest"/>
+            <class name="selenium.listeners.SearchTest"/>
+            <class name="selenium.listeners.LoginTest"/>
         </classes>
     </test>
 </suite>

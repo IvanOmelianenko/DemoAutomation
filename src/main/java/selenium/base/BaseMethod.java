@@ -1,4 +1,4 @@
-package base;
+package selenium.base;
 
 
 import org.openqa.selenium.By;
@@ -7,17 +7,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import selenium.config.WebDriverInit;
+import static java.time.Duration.ofSeconds;
 
-import static config.WebDriverInit.getDriver;
+
 
 public class BaseMethod {
 
     public WebDriverWait getWait() {
-        return new WebDriverWait(getDriver(), 10);
+        return new WebDriverWait(WebDriverInit.getDriver(), ofSeconds(10));
     }
 
     protected Actions getAction() {
-        return new Actions(getDriver());
+        return new Actions(WebDriverInit.getDriver());
     }
     protected void click(By locator) {
         getWait().until(d -> d.findElement(locator)).click();
@@ -42,7 +44,7 @@ public class BaseMethod {
     }
 
     protected WebDriverWait getWait(int time) {
-        return new WebDriverWait(getDriver(), time);
+        return new WebDriverWait(WebDriverInit.getDriver(), ofSeconds(time));
     }
     protected void sendElement(By search, String text, int time) {
         getWait(time).until(ExpectedConditions.presenceOfElementLocated(search)).sendKeys(text);

@@ -12,9 +12,11 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>3.141.59</selenium.version>
+        <selenium.version>4.10.0</selenium.version>
         <driver.manager>5.4.1</driver.manager>
         <testng.version>6.14.3</testng.version>
+        <selenide.version>6.15.0</selenide.version>
+        <assertj.version>3.11.1</assertj.version>
     </properties>
 
     <dependencies>
@@ -37,11 +39,14 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.11.1</version>
+            <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
-
-
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
+        </dependency>
 
 
     </dependencies>

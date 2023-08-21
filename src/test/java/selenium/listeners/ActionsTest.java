@@ -1,8 +1,10 @@
+package selenium.listeners;
+
 import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import po.ActionsPage;
+import selenium.po.ActionsPage;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
@@ -78,7 +80,7 @@ public class ActionsTest extends BaseTest {
         driver.get("https://demoqa.com/webtables");
         driver.manage().window().maximize();
 
-        assertThat(new ActionsPage().getTextFromTable(1, 6))
+        assertThat(new ActionsPage().getTextFromTable(1, 1))
                 .as("Text isn't equals")
                 .isEqualTo("Insurance");
     }
