@@ -43,6 +43,8 @@ public class BaseMethod {
         return getWait().until(d -> d.findElement(search)).getText();
     }
 
+
+
     protected WebDriverWait getWait(int time) {
         return new WebDriverWait(WebDriverInit.getDriver(), ofSeconds(time));
     }
